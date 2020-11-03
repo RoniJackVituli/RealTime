@@ -4,6 +4,7 @@ print('Hello RealTime')
 print('The Team is: Roni , Avi , Eythen , Yuval')
 
 
-
+y = 0
 x = 5
-print(x)
+y += x
+print(x,y)
