@@ -1,0 +1,9 @@
+{
+  "Stores": [
+    {
+      "Name": "Zara",
+      "Hours": "12-17",
+      "Product_types": [ "Clothes", "Shoes", "T-Shirts" ]
+    }
+  ]
+}
