@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80c55e8d-9ba1-49fa-9f4a-5d9b2a84dae6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UserStory16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserStoryTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserStory16.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserStory16.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserStoryTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserStoryTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,29 +60,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in UserStoryTest.py">
-    <configuration name="UserStory16 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="RealTime" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UserStory16.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests for UserStoryTest.test_UserStory16.test_check_account">
     <configuration name="UserStory16" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RealTime" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,6 +83,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="UserStory16&amp;14" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="RealTime" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UserStory16.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for UserStoryTest.test_UserStory16.test_check_account" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="RealTime" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;UserStoryTest.test_UserStory16.test_check_account&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in UserStoryTest.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
       <module name="RealTime" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.UserStory16 (1)" />
+        <item itemvalue="Python tests.Unittests for UserStoryTest.test_UserStory16.test_check_account" />
+        <item itemvalue="Python.UserStory16&amp;14" />
         <item itemvalue="Python.UserStory16" />
       </list>
     </recent_temporary>
@@ -137,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606666701738</updated>
       <workItem from="1606666715479" duration="912000" />
-      <workItem from="1606668087269" duration="3075000" />
+      <workItem from="1606668087269" duration="6706000" />
     </task>
     <servers />
   </component>
@@ -157,41 +172,49 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1719" height="253" key="GridCell.Tab.0.bottom" timestamp="1606670629051">
+    <state width="1530" height="281" key="GridCell.Tab.0.bottom" timestamp="1606674746170">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state width="1530" height="281" key="GridCell.Tab.0.bottom/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606674746170" />
     <state width="1719" height="253" key="GridCell.Tab.0.bottom/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606670352253" />
     <state width="1719" height="253" key="GridCell.Tab.0.bottom/-1012.-642.1012.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606670629051" />
-    <state width="1719" height="253" key="GridCell.Tab.0.center" timestamp="1606670629050">
+    <state width="1530" height="281" key="GridCell.Tab.0.center" timestamp="1606674746170">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state width="1530" height="281" key="GridCell.Tab.0.center/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606674746170" />
     <state width="1719" height="253" key="GridCell.Tab.0.center/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606670352252" />
     <state width="1719" height="253" key="GridCell.Tab.0.center/-1012.-642.1012.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606670629050" />
-    <state width="1719" height="253" key="GridCell.Tab.0.left" timestamp="1606670629050">
+    <state width="1530" height="281" key="GridCell.Tab.0.left" timestamp="1606674746169">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state width="1530" height="281" key="GridCell.Tab.0.left/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606674746169" />
     <state width="1719" height="253" key="GridCell.Tab.0.left/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606670352252" />
     <state width="1719" height="253" key="GridCell.Tab.0.left/-1012.-642.1012.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606670629050" />
-    <state width="1719" height="253" key="GridCell.Tab.0.right" timestamp="1606670629051">
+    <state width="1530" height="281" key="GridCell.Tab.0.right" timestamp="1606674746170">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state width="1530" height="281" key="GridCell.Tab.0.right/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606674746170" />
     <state width="1719" height="253" key="GridCell.Tab.0.right/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606670352253" />
     <state width="1719" height="253" key="GridCell.Tab.0.right/-1012.-642.1012.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606670629051" />
-    <state width="939" height="354" key="GridCell.Tab.1.bottom" timestamp="1606669521786">
+    <state width="939" height="338" key="GridCell.Tab.1.bottom" timestamp="1606673761173">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state width="939" height="338" key="GridCell.Tab.1.bottom/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606673761173" />
     <state width="939" height="354" key="GridCell.Tab.1.bottom/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606669521786" />
-    <state width="939" height="354" key="GridCell.Tab.1.center" timestamp="1606669521785">
+    <state width="939" height="338" key="GridCell.Tab.1.center" timestamp="1606673761173">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state width="939" height="338" key="GridCell.Tab.1.center/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606673761173" />
     <state width="939" height="354" key="GridCell.Tab.1.center/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606669521785" />
-    <state width="939" height="354" key="GridCell.Tab.1.left" timestamp="1606669521784">
+    <state width="939" height="338" key="GridCell.Tab.1.left" timestamp="1606673761173">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state width="939" height="338" key="GridCell.Tab.1.left/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606673761173" />
     <state width="939" height="354" key="GridCell.Tab.1.left/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606669521784" />
-    <state width="939" height="354" key="GridCell.Tab.1.right" timestamp="1606669521785">
+    <state width="939" height="338" key="GridCell.Tab.1.right" timestamp="1606673761173">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
+    <state width="939" height="338" key="GridCell.Tab.1.right/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606673761173" />
     <state width="939" height="354" key="GridCell.Tab.1.right/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606669521785" />
     <state x="560" y="289" key="Vcs.Push.Dialog.v2" timestamp="1606666983354">
       <screen x="0" y="25" width="1920" height="1055" />
@@ -206,9 +229,17 @@
     </state>
     <state x="-1011" y="-608" width="1011" height="1806" maximized="true" key="dock-window-2/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606670873940" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="account" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/RealTime$UserStory16__1_.coverage" NAME="UserStory16 (1) Coverage Results" MODIFIED="1606669493032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RealTime$UserStory16__1_.coverage" NAME="UserStory16 (1) Coverage Results" MODIFIED="1606674708761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$main.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1606668038947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RealTime$Unittests_in_UserStoryTest_py.coverage" NAME="Unittests in UserStoryTest.py Coverage Results" MODIFIED="1606670629040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RealTime$Unittests_for_UserStoryTest_test_UserStory16_test_check_account.coverage" NAME="Unittests for UserStoryTest.test_UserStory16.test_check_account Coverage Results" MODIFIED="1606674746152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RealTime$Unittests_in_UserStoryTest_py.coverage" NAME="Unittests in UserStoryTest.py Coverage Results" MODIFIED="1606673557547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

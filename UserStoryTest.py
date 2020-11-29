@@ -7,7 +7,9 @@ class test_UserStory16(unittest.TestCase):
         UserStory16.password = "5t4r3e2w1q"
         UserStory16.store = "Zap"
         self.assertFalse(UserStory16.check_account())
+        UserStory16.account = "Roni Jack Vituli"
         UserStory16.store = "Zara"
+        UserStory16.password = "5t4r3e2w1q"
         self.assertTrue(UserStory16.check_account())
         UserStory16.account = "TOMNIfdsdf"
         self.assertFalse(UserStory16.check_account())
