@@ -18,6 +18,3 @@ def opening_hours(store_name):
     else:
         print('Store not found')
 
-
-store = input('Please enter the name of the store: ')
-opening_hours(store)
