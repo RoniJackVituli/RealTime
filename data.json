@@ -2,21 +2,29 @@
   "Stores": [
     {
       "Name": "Zara",
-      "Hours": "12-17",
+      "Hours_Open": "11:00-23:00",
       "Product_types": [ "Clothes", "Shoes", "T-Shirts" ],
-      "Allowed_People" : 14
+      "Allowed_People" : 14,
+      "Place": "Grand Mall"
     },
     {
-      "Name": "Pull & Bear",
-      "Hours": "14-23",
+      "Name": "Mango",
+      "Hours_Open": "10:00-23:00",
       "Product_types": [ "Headbands", "Shoes", "Tracksuits" ],
-      "Allowed_People": 30
+      "Allowed_People": 30,
+      "Place": "Big"
     },
     {
       "Name": "H&M",
-      "Hours": "18-00",
+      "Hours_Open": "18-00",
       "Product_types": [ "Guns", "Shotguns", "Tracksuits" ],
-      "Allowed_People": 29
+      "Allowed_People": 29,
+      "Place": "Yes-Planet"
     }
+  ],
+  
+  "Managers":[{"Name":"Roni Jack Vituli", "Password":"5t4r3e2w1q","Store":"Zara"},
+  {"Name":"Avi Kohen", "Password":"5t4r3e2w1q","Store":"H&M"},
+  {"Name":"Josh kliver", "Password":"5t4r3e2w1q","Store":"Mango"}
   ]
 }
