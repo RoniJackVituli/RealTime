@@ -16,5 +16,4 @@ def opening_hours(store_name):
         print('Opening hours of ' + store_name + ':')
         print((obj['Stores'][2]['Hours']))
     else:
-        print('Store not found')
-
+     print('Store not found')
