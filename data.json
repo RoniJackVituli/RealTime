@@ -4,6 +4,11 @@
       "Name": "Zara",
       "Hours": "12-17",
       "Product_types": [ "Clothes", "Shoes", "T-Shirts" ]
+    },
+    {
+      "Name": "Pull & Bear",
+      "Hours": "14-23",
+      "Product_types": [ "Headbands", "Shoes", "Tracksuits" ]
     }
   ]
 }
