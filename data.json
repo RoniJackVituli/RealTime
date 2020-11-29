@@ -9,6 +9,11 @@
       "Name": "Pull & Bear",
       "Hours": "14-23",
       "Product_types": [ "Headbands", "Shoes", "Tracksuits" ]
+    },
+    {
+      "Name": "H&M",
+      "Hours": "18-00",
+      "Product_types": [ "Guns", "Shotguns", "Tracksuits" ]
     }
   ]
 }
