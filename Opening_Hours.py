@@ -1,4 +1,3 @@
-import json
 import module1
 num_of_stores = 3
 
