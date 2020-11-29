@@ -1,4 +1,3 @@
-import module1
 import Opening_Hours as f
 
 
