@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cb8596e-4f44-4d83-8063-7a398e3078c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="5cb8596e-4f44-4d83-8063-7a398e3078c5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,26 +100,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="354" key="GridCell.Tab.0.bottom" timestamp="1606664177623">
+    <state width="1269" height="330" key="GridCell.Tab.0.bottom" timestamp="1606665972139">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="357" key="GridCell.Tab.0.bottom/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606660661070" />
     <state width="1878" height="354" key="GridCell.Tab.0.bottom/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606664177623" />
-    <state width="1878" height="354" key="GridCell.Tab.0.center" timestamp="1606664177623">
+    <state width="1269" height="330" key="GridCell.Tab.0.bottom/-1012.-642.1012.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606665972139" />
+    <state width="1269" height="330" key="GridCell.Tab.0.center" timestamp="1606665972139">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="357" key="GridCell.Tab.0.center/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606660661069" />
     <state width="1878" height="354" key="GridCell.Tab.0.center/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606664177623" />
-    <state width="1878" height="354" key="GridCell.Tab.0.left" timestamp="1606664177622">
+    <state width="1269" height="330" key="GridCell.Tab.0.center/-1012.-642.1012.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606665972139" />
+    <state width="1269" height="330" key="GridCell.Tab.0.left" timestamp="1606665972138">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="357" key="GridCell.Tab.0.left/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606660661068" />
     <state width="1878" height="354" key="GridCell.Tab.0.left/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606664177622" />
-    <state width="1878" height="354" key="GridCell.Tab.0.right" timestamp="1606664177623">
+    <state width="1269" height="330" key="GridCell.Tab.0.left/-1012.-642.1012.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606665972138" />
+    <state width="1269" height="330" key="GridCell.Tab.0.right" timestamp="1606665972139">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1878" height="357" key="GridCell.Tab.0.right/-1009.-642.1009.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606660661070" />
     <state width="1878" height="354" key="GridCell.Tab.0.right/-1011.-642.1011.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606664177623" />
+    <state width="1269" height="330" key="GridCell.Tab.0.right/-1012.-642.1012.1895/0.25.1920.1055@0.25.1920.1055" timestamp="1606665972139" />
     <state width="1878" height="354" key="GridCell.Tab.1.bottom" timestamp="1606664177625">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
