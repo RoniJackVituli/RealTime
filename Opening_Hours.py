@@ -8,5 +8,4 @@ obj = json.loads(data)
 def opening_hours():
     for i in range(3):
         print('Opening hours of ' + obj['Stores'][i]['Name'] + ':')
-#        print((obj['Stores'][i]['Name']))
         print((obj['Stores'][i]['Hours']))
