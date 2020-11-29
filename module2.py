@@ -34,7 +34,7 @@ def print_menu():
     hour = datetime.now().hour
     choice = 1
     while (not flag and choice != 0):
-        print("\n\nÏ--------------------Hey {0}, Welcome to the management area--------------------".format(account))
+        print("\n\n Hey {0}, Welcome to the management area--------------------".format(account))
         print("1. Change opening hours press -> 1")
         print("2. Exit from the programming -> 0")
         choice = int(input())
