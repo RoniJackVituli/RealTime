@@ -18,9 +18,3 @@ def print_data():
 		print("Amount of people allowed: ",obj["Stores"][i]["Allowed_People"])
 		print(obj["Stores"][i]["Product_types"])
 		print()
-	
-	
-
-
-
-#print(obj['Stores'])
