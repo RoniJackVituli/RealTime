@@ -1,0 +1,22 @@
+{
+  "Stores": [
+    {
+      "Name": "Zara",
+      "Hours": "12-17",
+      "Product_types": [ "Clothes", "Shoes", "T-Shirts" ],
+      "Allowed_People" : 14
+    },
+    {
+      "Name": "Pull & Bear",
+      "Hours": "14-23",
+      "Product_types": [ "Headbands", "Shoes", "Tracksuits" ],
+      "Allowed_People": 30
+    },
+    {
+      "Name": "H&M",
+      "Hours": "18-00",
+      "Product_types": [ "Guns", "Shotguns", "Tracksuits" ],
+      "Allowed_People": 29
+    }
+  ]
+}
