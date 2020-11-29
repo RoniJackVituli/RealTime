@@ -3,22 +3,23 @@ from datetime import datetime
 with open('data.json','r') as f:
     data = f.read()
 obj = json.loads(data)
+flag = False
 
 def check_account():
     for i in range (len(obj['Managers'])):
         if(obj['Managers'][i]['Name'] == account and obj['Managers'][i]['Password'] == password and obj['Managers'][i]['Store'] == store):
-         return True
+            return True
     return False
 
 def update_open_hours():
-    print("The correct hours is: ",store['Hours_Open'])
+    print("The correct hours is: ", store['Hours_Open'])
     store['Hours_Open'] = input('Enter new open Houres: ')
 
 def menu_option(x):
     switcher = {
         0: update_open_hours,
     }
-    return switcher.get(x, lambda: "invalid choice")
+    return switcher.get(x, lambda: print("invalid choice"))
 
 
 def Take_info_stroe():
@@ -46,20 +47,20 @@ def print_menu():
     else:
         print("All changes have been made\nGood Evening, {0}".format(account))
 
-def START():
-    print("--------------------Welcome to RealTime--------------------")
-    flag = False
+
+print("--------------------Welcome to RealTime--------------------")
+store = input('Enter the name of the store: ')
+account = input('Enter your name: ')
+password = input('Enter your password: ')
+while(not check_account()):
+    print('Worng input please try again')
     store = input('Enter the name of the store: ')
     account = input('Enter your name: ')
     password = input('Enter your password: ')
-    while(not check_account()):
-        print('Worng input please try again')
-        store = input('Enter the name of the store: ')
-        account = input('Enter your name: ')
-        password = input('Enter your password: ')
-    print_menu()
+
+print_menu()
 
 
-START()
+
 
 
