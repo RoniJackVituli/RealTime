@@ -1,8 +1,10 @@
-import Opening_Hours as f
-
+import Opening_Hours
+import module1
 
 def main():
-    f.opening_hours()
+    Opening_Hours.opening_hours()
+    module1.print_data()
+    
 
 if __name__ == "__main__":
     main()
