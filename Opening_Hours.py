@@ -1,11 +1,10 @@
 import json
-
-with open('data.json', 'r') as f:
-    data = f.read()
-obj = json.loads(data)
+import module1
+num_of_stores = 3
 
 
 def opening_hours():
-    for i in range(3):
+    for i in range(num_of_stores):
         print('Opening hours of ' + obj['Stores'][i]['Name'] + ':')
         print((obj['Stores'][i]['Hours']))
+
