@@ -10,7 +10,7 @@ def change_num_of_people():
     for i in range(3):
         if obj['Stores'][i]["Name"] == name:
             num = int(input('Enter new number of allowed people'))
-            obj['Stores'][i]["Allowed"] = num
+            obj['Stores'][i]["Allowed_People"] = num
 
 
 
