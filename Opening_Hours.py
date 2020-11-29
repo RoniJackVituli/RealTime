@@ -5,19 +5,8 @@ with open('data.json', 'r') as f:
 obj = json.loads(data)
 
 
-def opening_hours(store_name):
-    if store_name == 'ZARA':
-        print('Opening hours of ' + store_name + ':')
-        print((obj['Stores'][0]['Hours']))
-    elif store_name == 'Pull & Bear':
-        print('Opening hours of ' + store_name + ':')
-        print((obj['Stores'][1]['Hours']))
-    elif store_name == 'H&M':
-        print('Opening hours of ' + store_name + ':')
-        print((obj['Stores'][2]['Hours']))
-    else:
-        print('Store not found')
-
-
-store = input('Please enter the name of the store: ')
-opening_hours(store)
+def opening_hours():
+    for i in range(3):
+        print('Opening hours of ' + obj['Stores'][i]['Name'] + ':')
+#        print((obj['Stores'][i]['Name']))
+        print((obj['Stores'][i]['Hours']))
