@@ -1,4 +1,21 @@
 {
+  "Managers": [
+    {
+      "Name": "Roni Jack Vituli",
+      "Password": "5t4r3e2w1q",
+      "Store": "Zara"
+    },
+    {
+      "Name": "Avi Kohen",
+      "Password": "5t4r3e2w1q",
+      "Store": "H&M"
+    },
+    {
+      "Name": "Josh kliver",
+      "Password": "5t4r3e2w1q",
+      "Store": "Mango"
+    }
+  ],
   "Stores": [
     {
       "Allowed_People": 14,
