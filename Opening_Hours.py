@@ -1,9 +1,7 @@
 import json
+import module1
 
-with open('data.json', 'r') as f:
-    data = f.read()
-obj = json.loads(data)
-
+obj = module1.open_data()
 
 def opening_hours(store_name):
     if store_name == 'ZARA':
