@@ -1,0 +1,61 @@
+{
+  "Managers": [
+    {
+      "Name": "Roni Jack Vituli",
+      "Password": "5t4r3e2w1q",
+      "Store": "Zara"
+    },
+    {
+      "Name": "Avi Kohen",
+      "Password": "5t4r3e2w1q",
+      "Store": "H&M"
+    },
+    {
+      "Name": "Josh Oliver",
+      "Password": "5t4r3e2w1q",
+      "Store": "Mango"
+    }
+  ],
+  "Stores": [
+    {
+      "Name": "Zara",
+      "Allowed_People": 14,
+      "Hours": "12-17",
+      "Product_types": [ "Clothes", "Shoes", "T-Shirts" ],
+      "Current_Amount": 10
+    },
+    {
+      "Name": "Mango",
+      "Allowed_People": 30,
+      "Hours": "14-23",
+      "Product_types": [ "Headbands", "Shoes", "Tracksuits" ],
+      "Current_Amount": 5
+    },
+    {
+      "Name": "H&M",
+      "Allowed_People": 29,
+      "Hours": "11-19",
+      "Product_types": [ "Guns", "Shotguns", "Tracksuits" ],
+      "Current_Amount": 20
+    }
+  ],
+  "Costumers": [
+    {
+      "Name": "Yossi Ben David",
+      "Password": "123456"
+    },
+    {
+      "Name": "Shimon Bublil",
+      "Password": "123456"
+    },
+    {
+      "Name": "David Davidov",
+      "Password": "123456"
+    },
+    {
+      "Name": "Guri Alfi",
+      "Password": "123456"
+    }
+  ]
+}
+
