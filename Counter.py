@@ -16,6 +16,3 @@ def costumer_registered():
 def manager_registered():
     manager_amount_registered = len(obj['Managers'])
     return manager_amount_registered
-
-
-
