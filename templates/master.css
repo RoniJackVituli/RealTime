@@ -1,0 +1,20 @@
+body{
+    font-family: Herculanum;
+    background: #3702a0;
+}
+p{
+    text-align: center;
+}
+
+#brandBar{
+    color: white;
+    font-family: "Aldrich", sans-serif;
+}
+h4{
+    text-align: center;
+}
+
+#BODY{
+    background: gainsboro;
+    font-family: Abraham;
+}

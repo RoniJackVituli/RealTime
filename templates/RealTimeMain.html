@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project</title>
+    <!-- Bootstrap CSS, JS, and jQuery -->
+      <link rel="stylesheet" href="master.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </head>
+  <body id = "BODY">
+
+     <nav class="navbar navbar-dark bg-dark">
+         <div class ="navbar-header">
+             <a class="navbar-brand" id = "brandBar" href="/">RealTime</a>
+         </div>
+            <ul style=" list-style-type: none;">
+                {% if result.isUserAv%}
+                    <li style="color:white;font-weight: bold">{{result.user}}</li>
+                {% else %}
+                    <li> <a href="/signin">Log in</a> </li>
+                {% endif %}
+
+            </ul>
+     </nav>
+         <h1><p class="text-center">RealTime</p></h1>
+
+    <div class = "MainText">
+        <h4> שלום וברוכים הבאים לאתר זמן-אמת,עקב משבר הקורונה המון חנויות ועסקים פועלים על פי הנחיות משרד הבריאות ואנחנו כאן על מנת לעשות סדר בבלאגן</h4>
+        <h4>כאן תוכלו למצוא מספר חנויות ולדעת מה שעות פתיחה שלהם ואיך הם עובדים בהקשר להנחיות משרד הבריאות.</h4>
+        <h4>תוכלו לדעת כמה אנשים נמצאים בזמן אמת בחנות על מנת לחסות לעצמך זמן</h4>
+        <h4>ובנוסף תוכלו לראות כאן מבצעים והנחות שיש בחנות וגם להיכנס באופן ישיר לאתרים של החנויות</h4>
+    </div>
+
+    <div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://www.franmark.co.il/wp-content/uploads/2019/03/%D7%9C%D7%95%D7%92%D7%95-%D7%96%D7%90%D7%A8%D7%94.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://pbs.twimg.com/profile_images/1273216650251251713/B_sGJ8vm_400x400.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </div>
+
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+    </div>
+
+  </body>
+</html>
