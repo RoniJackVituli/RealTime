@@ -1,0 +1,94 @@
+body{
+    font-family: Herculanum;
+    background: #3702a0;
+}
+p{
+    text-align: center;
+}
+
+#brandBar{
+    color: white;
+    font-family: "Aldrich", sans-serif;
+}
+.MainText{
+    text-align: center;
+    font-family: system-ui;
+}
+.RealTimeTitle{
+    margin: auto;
+    width: 56%;
+}
+
+#BODY{
+    background: white;
+    /*font-family: Abraham;*/
+}
+.storyHeading{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: -6px;
+    color: white;
+    background-color: rgba(0,123,255,.5);
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.ulList {
+    width: 250px;
+    list-style-type: none;
+}
+
+.liright {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    float: right;
+}
+
+.lileft {
+    display: inline-block;
+    float: right;
+    padding-right: 15px;
+}
+
+.bussinessArea{
+    text-align: center;
+}
+.storyHeading{
+    text-align: center;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.card-img-top {
+    box-shadow: 10px 10px 5px grey;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    background: white;
+}
+.card-body {
+    box-shadow: 10px 10px 5px grey;
+    font-family: Abraham;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.25rem;
+    background: white;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+

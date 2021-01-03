@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Project</title>
     <!-- Bootstrap CSS, JS, and jQuery -->
-      <link rel="stylesheet" href="master.css">
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/master.css') }}">
+<!--      <link rel="stylesheet" href="../static/styles/">-->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -16,69 +17,89 @@
          <div class ="navbar-header">
              <a class="navbar-brand" id = "brandBar" href="/">RealTime</a>
          </div>
-            <ul style=" list-style-type: none;">
+            <ul class="ulList">
                 {% if result.isUserAv%}
-                    <li style="color:white;font-weight: bold">{{result.user}}</li>
+                    <li class="liright">{{result.user}}</li>
+                    <li class="lileft"><a href="/logout"> Log out </a><li/>
                 {% else %}
-                    <li> <a href="/signin">Log in</a> </li>
+                    <li class="liright"> <a href="/signin" >Log in</a> </li>
                 {% endif %}
 
             </ul>
      </nav>
-         <h1><p class="text-center">RealTime</p></h1>
+     <div class= "RealTimeTitle">
+         <img src="https://i.ibb.co/S7wK1RZ/RealTime.png" alt="No found">
+     </div>
 
-    <div class = "MainText">
+     <div class = "MainText">
         <h4> שלום וברוכים הבאים לאתר זמן-אמת,עקב משבר הקורונה המון חנויות ועסקים פועלים על פי הנחיות משרד הבריאות ואנחנו כאן על מנת לעשות סדר בבלאגן</h4>
         <h4>כאן תוכלו למצוא מספר חנויות ולדעת מה שעות פתיחה שלהם ואיך הם עובדים בהקשר להנחיות משרד הבריאות.</h4>
         <h4>תוכלו לדעת כמה אנשים נמצאים בזמן אמת בחנות על מנת לחסות לעצמך זמן</h4>
         <h4>ובנוסף תוכלו לראות כאן מבצעים והנחות שיש בחנות וגם להיכנס באופן ישיר לאתרים של החנויות</h4>
+     </div><br><br>
+
+     <div class="storyHeading">
+         <h1>החנויות שלנו</h1>
+     </div>
+
+   <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <form class="d-flex">
+                 <input class="form-control me-2" type="search" placeholder="חפש חנויות" aria-label="Search">
+                 <button class="btn-outline-success" type="submit">Search</button>
+             </form>
+        </div>
+   </nav>
+
+     <br>
+     <div class="ZaraCard" style="width: 18rem;">
+         <a href="https://www.zara.com/il/" >
+             <img src="https://seamall.co.il/wp-content/uploads/2019/05/ZARA.jpg" class="card-img-top" alt="...">
+<!--             <div class="card-body">-->
+<!--                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--             </div>-->
+         </a>
+     </div>
+
+     <br>
+
+     <div class="ForeverCard" style="width: 18rem;">
+         <a href="https://www.forever21.com/" >
+             <img src=" https://images.squarespace-cdn.com/content/v1/536703e7e4b03af4b79eaaaf/1403145558827-TLZJV2PAOAZE9N3RPBZ3/ke17ZwdGBToddI8pDm48kIIp3_JFhxBmDSDtEKzuUbxZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxOc6U6yvNHuFt1SUHWQmL9qjyYsmhfJxoABX8vuaXmc0KQnjKGGMt_iOzF5CwLS3Y/logo-f21.png?format=1500w" class="card-img-top" alt="...">
+<!--             <div class="card-body">-->
+<!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--             </div>-->
+         </a>
+     </div>
+
+     <br>
+
+     <div class="BershkCard" style="width: 18rem;">
+         <a href="https://www.bershka.com/il/" >
+             <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+         </a>
+<!--             <div class="card-body">-->
+<!--                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--             </div>-->
+     </div>
+
+     <br>
+
+     <div class="PullBearCard" style="width: 18rem;">
+         <a href="https://www.pullandbear.com/">
+             <img src="https://seamall.co.il/wp-content/uploads/2019/05/PULL.jpg" class="card-img-top" alt="...">
+         </a>
+<!--             <div class="card-body">-->
+<!--                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+<!--             </div>-->
+     </div>
+
+     </div>
+     <br><br>
+     <div class = "back">
+        <a href="/about">
+        <p><button class="button">About Us</button></p>
+        </a>
     </div>
-
-    <div>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="https://www.franmark.co.il/wp-content/uploads/2019/03/%D7%9C%D7%95%D7%92%D7%95-%D7%96%D7%90%D7%A8%D7%94.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </div>
-    </div>
-
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="https://pbs.twimg.com/profile_images/1273216650251251713/B_sGJ8vm_400x400.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </div>
-    </div>
-
-
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
-</div>
-
-    </div>
-
   </body>
 </html>
