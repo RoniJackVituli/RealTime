@@ -20,17 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80c55e8d-9ba1-49fa-9f4a-5d9b2a84dae6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/styles/About.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/RealTimeAbout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/RealTimeBussiness.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/RealTimeRegistration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles/Bussiness.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles/registration.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles/setting.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/styles/signin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/RealTimeChangePassword.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/RealTimeDeleteUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/RealTimeSetting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RealTime.db" beforeDir="false" afterPath="$PROJECT_DIR$/RealTime.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RealTime.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/About.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/About.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/RealTimeAbout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RealTimeAbout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/RealTimeBussiness.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RealTimeBussiness.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/RealTimeMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RealTimeMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/RealTimeRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RealTimeRegistration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/RealTimeSignIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RealTimeSignIn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/master.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +48,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Unit Test" />
+        <option value="JavaScript File" />
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -104,11 +112,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/image" />
       <recent name="$PROJECT_DIR$/static/styles" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/templates/js" />
     </key>
   </component>
   <component name="RunManager" selected="Python.UserStory16">
@@ -211,8 +219,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.UserStory16" />
-        <item itemvalue="Python tests.Unittests for UserStoryTest.test_UserStory16.test_check_account" />
         <item itemvalue="Python.UserStory16&amp;14" />
+        <item itemvalue="Python tests.Unittests for UserStoryTest.test_UserStory16.test_check_account" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +247,10 @@
       <workItem from="1608387178728" duration="1339000" />
       <workItem from="1608456306908" duration="1105000" />
       <workItem from="1608493076636" duration="2275000" />
-      <workItem from="1609604189266" duration="24007000" />
+      <workItem from="1609604189266" duration="40279000" />
+      <workItem from="1609752049846" duration="8570000" />
+      <workItem from="1609760729106" duration="23999000" />
+      <workItem from="1609788755493" duration="7025000" />
     </task>
     <servers />
   </component>
@@ -262,23 +273,44 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>147</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
         <watch expression="account" language="Python" />
       </configuration>
       <configuration name="PythonConfigurationType">
-        <watch expression="cur.fetchone()" language="Python" />
-        <watch expression="cur.execute(&quot;SELECT * FROM USERS WHERE USERNAME='RJV@gmail.com' &quot;).fetchone()" language="Python" />
+        <watch expression="RES[&quot;items&quot;]" language="Python" />
+        <watch expression="cur.execute('''                             UPDATE RealTime.db.users                             SET password = result.get('newPass'),                             WHERE Name = username                             ''')" language="Python" />
+        <watch expression="RES['items']" language="Python" />
+        <watch expression="RES[&quot;items&quot;]" language="Python" />
+        <watch expression="i['username']" language="Python" />
+        <watch expression="result.get('yesOrNo')" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RealTime$main.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1606668038947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$Unittests_in_UserStoryTest_py.coverage" NAME="Unittests in UserStoryTest.py Coverage Results" MODIFIED="1606673557547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GitHub$UserStory16.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1609666889096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GitHub$UserStory16.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1609834000007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$UserStory16__1_.coverage" NAME="UserStory16 (1) Coverage Results" MODIFIED="1606674708761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GitHub$UserStory16and14.coverage" NAME="UserStory16and14 Coverage Results" MODIFIED="1608135031017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GitHub$Unittests_for_UserStoryTest_test_UserStory16_test_check_account.coverage" NAME="Unittests for UserStoryTest.test_UserStory16.test_check_account Coverage Results" MODIFIED="1608059309845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GitHub$UserStory16_14.coverage" NAME="UserStory16&amp;14 Coverage Results" MODIFIED="1609760735742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$Unittests_for_UserStoryTest_test_UserStory16_test_check_account.coverage" NAME="Unittests for UserStoryTest.test_UserStory16.test_check_account Coverage Results" MODIFIED="1606674746152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

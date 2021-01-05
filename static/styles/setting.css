@@ -1,0 +1,90 @@
+h1{
+    text-align: center;
+}
+
+.btn{
+
+}
+
+.btn-primary1 {
+    margin-left: 500px;
+    color: #fff;
+    background-color: #3ba439;
+    border-color: #007bff;
+}
+.btn-primary3 {
+     margin-left: 490px;
+    color: #fff;
+    background-color: #bd2121;
+    border-color: #007bff;
+}
+.btn-primary4{
+    color: #fff;
+    border-color: #007bff;
+    background-color: #0960c8;
+     margin-left: 510px
+}
+
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+.btn-group, .btn-group-vertical {
+    margin-left: 500px;
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}

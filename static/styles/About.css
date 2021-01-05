@@ -24,12 +24,19 @@ html {
 }
 
 .about-section {
-  padding: 50px;
+  padding: 100px;
   text-align: center;
   background-color: #474e5d;
   color: white;
 }
 
+.about-section1{
+  padding: 49%;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+
+}
 .container {
   padding: 0 16px;
 }
@@ -41,7 +48,7 @@ html {
 }
 
 .title {
-  color: grey;
+  color: #9b9b9b;
 }
 
 .button {

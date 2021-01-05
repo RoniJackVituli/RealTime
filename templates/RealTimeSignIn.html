@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Project</title>
     <!-- Bootstrap CSS, JS, and jQuery -->
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/master.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/signin.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -22,6 +22,42 @@
       </ul>
 
     </nav>
+
+
+
+  <div class="background-wrap">
+    <div class="background"></div>
+  </div>
+
+  <form id="accesspanel" action="/setUdata" method="post">
+    <h1 id="litheader">RealTime</h1>
+    <div class="inset">
+      <p>
+        <input type="text" name="username" id="email" placeholder="Email address">
+      </p>
+      <p>
+        <input type="password" name="password" id="password" placeholder="Password">
+      </p>
+      <div style="text-align: center;">
+         <div class="checkboxouter">
+            <input type="checkbox" name="rememberme" id="remember" value="Remember">
+            <label class="checkbox"></label>
+         </div>
+         <label for="remember">Remember me for 14 days</label>
+      </div>
+      <input class="loginLoginValue" type="hidden" name="service" value="login" />
+    </div>
+    <p class="p-container">
+      <input type="submit" name="Login" id="go" value="Login">
+    </p>
+  </form>
+
+    {%if userError%}
+
+      <div class="alert alert-danger" role="alert"> משתמש לא קיים! </div>
+
+    {% endif %}
+
 
 
 <!--    <div class="body"></div>-->
@@ -42,35 +78,46 @@
 
 <!--        {% endif %}-->
 
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Log In!</h1>
-        <p>Enter your email and password!</p>
-      </div>
-
-    </div>
-
-    <div class="container">
 
 
-    <form class="form-group" action="/setUdata" method="post">
-      <label for="userem">Email:</label>
-      <input type="email" class="form-control" name="username" placeholder="Email">
-
-      <label for="userpass">Password:</label>
-      <input type="password" class="form-control" name="password" placeholder="Password">
 
 
-      <button type="submit" class="btn btn-default" name="button">Submit</button>
-    </form>
 
-      {%if userError%}
 
-        <div class="alert alert-danger" role="alert"> משתמש לא קיים! </div>
+<!--    -->
+<!--    -->
+<!--    -->
+<!--    -->
+<!--    -->
+<!--    <div class="container">-->
+<!--      <div class="jumbotron">-->
+<!--        <h1>Log In!</h1>-->
+<!--        <p>Enter your email and password!</p>-->
+<!--      </div>-->
 
-      {% endif %}
+<!--    </div>-->
 
-    </div>
+<!--    <div class="container">-->
+
+
+<!--    <form class="form-group" action="/setUdata" method="post">-->
+<!--      <label for="userem">Email:</label>-->
+<!--      <input type="email" class="form-control" name="username" placeholder="Email">-->
+
+<!--      <label for="userpass">Password:</label>-->
+<!--      <input type="password" class="form-control" name="password" placeholder="Password">-->
+
+
+<!--      <button type="submit" class="btn btn-default" name="button">Submit</button>-->
+<!--    </form>-->
+
+<!--      {%if userError%}-->
+
+<!--        <div class="alert alert-danger" role="alert"> משתמש לא קיים! </div>-->
+
+<!--      {% endif %}-->
+
+<!--    </div>-->
 
   </body>
 </html>

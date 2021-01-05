@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
 body{
     font-family: Herculanum;
     background: #3702a0;
@@ -7,8 +9,11 @@ p{
 }
 
 #brandBar{
-    color: white;
-    font-family: "Aldrich", sans-serif;
+    font-family: 'Audiowide';
+    font-size: 22px;
+    padding: 15px 0;
+    position: relative;
+    text-shadow: 0 1px 0 #000;
 }
 .MainText{
     text-align: center;
@@ -23,6 +28,17 @@ p{
     background: white;
     /*font-family: Abraham;*/
 }
+
+.RealTimeTitle{
+    font-family: 'Audiowide';
+    font-size: 4.5rem;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 0 #000;
+}
+
+
 .storyHeading{
     border: none;
     outline: 0;
@@ -65,7 +81,15 @@ p{
   overflow: auto;
 }
 
+.cardSize{
+    width: 18rem;
+    display: inline-block;
+    adding-left: 15px;
+    padding-bottom: 15px;
+}
+
 .card-img-top {
+    width: 80%;
     box-shadow: 10px 10px 5px grey;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
@@ -92,3 +116,20 @@ p{
   width: 100%;
 }
 
+.btn-info{
+    margin-left: -65px;
+    margin-top: 19px;
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-group, .btn-group-vertical {
+    margin-left: -116px;
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: middle;
+    margin-top: 1px;
+
+}
