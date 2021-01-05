@@ -25,15 +25,26 @@ def tupleToDic(item):
         "username": item[5]
     }
 
+def reivewToDic(rev):
+    return {
+        "name":rev[0],
+        "comment":rev[1]
+    }
+
 @app.route('/')
 def main():
+    global RES
     with sqlite3.connect('RealTime.db') as conn:
         cur = conn.cursor()
         RES["items"] = []
-        items = cur.execute("SELECT company,storelink,storePhoto,storeHoure,desc,username FROM Stores").fetchall()
+        RES["Review"] = []
+        items = cur.execute("SELECT company,storelink,storePhoto,storeHoure,desc ,username FROM stores").fetchall()
         for item in items:
             RES["items"].append(tupleToDic(item))
-
+        review = cur.execute("SELECT user ,comment FROM review").fetchall()
+        for rev in review:
+            RES["Review"].append(reivewToDic(rev))
+        print(RES['items'])
     return render_template('RealTimeMain.html', result=RES)
 
 @app.route('/signin')
@@ -202,7 +213,23 @@ def loginUser():
     # return render_template('RealTimeMain.html')
 
 
+#--------------- Review ----------------------------
 
+@app.route('/main' ,methods=['POST'])
+def review():
+    result = request.form
+    sql = ''' INSERT INTO review(user,comment)
+                      VALUES(?,?) '''
+    storeData = (result.get('name'), result.get('comment'))
+    with sqlite3.connect('RealTime.db') as conn:
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, storeData)
+            conn.commit()
+            return redirect('/')
+        except Exception as e:
+            print(e)
+            return render_template('RealTimeMain.html', UserNotOk=True)
 
 
 #--------------- Manager Area ----------------------------

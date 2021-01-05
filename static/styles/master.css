@@ -97,7 +97,6 @@ p{
 }
 .card-body {
     box-shadow: 10px 10px 5px grey;
-    font-family: Abraham;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 0.25rem;
@@ -132,4 +131,8 @@ p{
     vertical-align: middle;
     margin-top: 1px;
 
+}
+.h2, h2 {
+    font-size: 2rem;
+    text-align: center;
 }

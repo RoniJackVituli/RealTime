@@ -52,7 +52,7 @@
         <h4>תוכלו לדעת כמה אנשים נמצאים בזמן אמת בחנות על מנת לחסות לעצמך זמן</h4>
         <h4>ובנוסף תוכלו לראות כאן מבצעים והנחות שיש בחנות וגם להיכנס באופן ישיר לאתרים של החנויות</h4>
      </div><br><br>
-
+     <a href = 'https://www.oref.org.il/?gclid=CjwKCAiAudD_BRBXEiwAudakX_q4Ckv3SD9z2A2JAuN12zODfcJLwoJ8upibs3LV742RB6SnRJcTPxoCjtwQAvD_BwE'><p>הנחיות משרד הבריאות</p></a>
      <div class="storyHeading">
          <h1>החנויות שלנו</h1>
      </div>
@@ -74,11 +74,11 @@
                  <img src="{{store.photo}}" class="card-img-top" alt="...">
              </a>
              <div class="card-body">
-                    <p> תיאור החנות:</p>
+                    <p><strong>תיאור החנות:</strong></p>
                     <p class="card-text">{{store.desc}}</p>
-                    <p> שעות פתיחה:</p>
+                     <p><strong>שעות פתיחה:</strong></p>
                     <p class ="card-text">{{store.hour}}</p>
-                    <p>מספר האנשים בחנות:</p>
+                    <p><strong>מספר האנשים בחנות:</strong></p>
                     <p id = "dom"> </p>
              </div>
         </div>
@@ -86,9 +86,38 @@
 
      <br>
     <script>
+        var numofitem = {{ result["items"]|length }};
+        console.log(numofitem)
         document.getElementById("dom").innerHTML =
         Math.floor((Math.random() * 35) +1);
     </script>
+
+     <br><br>
+    <form action = "/main" method="post">
+     <div class="review">
+            <h2 class = "revTitle">Add Review</h2>
+            <div class="input-group mb-3">
+                 <label for="name"></label>
+                 <input type="text" class="form-control" name = "name"  id = "name" placeholder="שם" aria-label="Username">
+            </div>
+            <div class="input-group">
+                <label for="comment"></label>
+                <input type="submit" class="registerbtn"><textarea class="form-control" placeholder="תגובתך" name="comment" id="comment" aria-label="With textarea"></textarea></input>
+            </div>
+        </div>
+    </form>
+     <br><br><br><br>
+
+     {% for store in result["Review"] %}
+         <div class="cardSize">
+             <div class="card-body">
+                 <p class="card-text"><strong>{{store.name}}</strong></p>
+                    <p><strong>תגובה:</strong></p>
+                    <p class ="card-text">{{store.comment}}</p>
+             </div>
+        </div>
+     {% endfor %}
+
 
 
      <br><br>
