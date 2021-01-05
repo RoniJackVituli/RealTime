@@ -25,9 +25,18 @@
                         <a href="/setting"> <button type="button" class="btn btn-warning">Setting</button></a>
                         <a href="/bussiness"><button type="button" class="btn btn-success">Create Bussiness</button></a>
                     </div>
-                {% else %}
+                {% endif %}
+                {% if result.isManager%}
+                    <li class="liright">{{result.user}}</li>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <a href="/logout"><button type="button" class="btn btn-danger">Logout</button></a>
+                        <a href="/Msetting"> <button type="button" class="btn btn-warning">Setting</button></a>
+                    </div>
+                {% endif %}
+                {% if result.UserOff%}
                     <li class="liright"> <a href="/signin"><button type="button" class="btn btn-primary">Log in</button></a></li>
                     <li class="lileft"><a href="/regUser"><button type="button" class="btn btn-success">Registration</button></a></li>
+
                 {% endif %}
 
             </ul>
@@ -67,6 +76,8 @@
              <div class="card-body">
                     <p> תיאור החנות:</p>
                     <p class="card-text">{{store.desc}}</p>
+                    <p> שעות פתיחה:</p>
+                    <p class ="card-text">{{store.hour}}</p>
                     <p>מספר האנשים בחנות:</p>
                     <p id = "dom"> </p>
              </div>

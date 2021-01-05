@@ -7,7 +7,7 @@ import sqlite3
 
 
 app = Flask(__name__)
-RES = {"isUserAv": False, "user":""}
+RES = {"isUserAv": False, "user": None, "isManager": False , "UserOff":True}
 
 def newDic(tup):
     return {"username":tup[0],
@@ -20,8 +20,9 @@ def tupleToDic(item):
         "company": item[0],
         "link": item[1],
         "photo": item[2],
-        "desc": item[3],
-        "username": item[4]
+        "hour": item[3],
+        "desc":item[4],
+        "username": item[5]
     }
 
 @app.route('/')
@@ -29,7 +30,7 @@ def main():
     with sqlite3.connect('RealTime.db') as conn:
         cur = conn.cursor()
         RES["items"] = []
-        items = cur.execute("SELECT company,storelink,storePhoto,desc,username FROM Stores").fetchall()
+        items = cur.execute("SELECT company,storelink,storePhoto,storeHoure,desc,username FROM Stores").fetchall()
         for item in items:
             RES["items"].append(tupleToDic(item))
 
@@ -77,7 +78,6 @@ def regBuis():
     storeData = (result.get('company'), int(result.get('numOfpeople')),
                  result.get('link'), result.get('photo'),
                  result.get('hours'), result.get('description'), RES["user"])
-    print(storeData)
     with sqlite3.connect('RealTime.db') as conn:
         cur = conn.cursor()
         try:
@@ -88,8 +88,8 @@ def regBuis():
             print(e)
             return render_template('RealTimeBussiness.html', saved=False, username=RES["user"])
 
-
 #--------------- About Page ----------------------------
+
 @app.route('/about')
 def about():
     return render_template('RealTimeAbout.html')
@@ -98,6 +98,8 @@ def about():
 @app.route('/logout')
 def logout():
     global RES
+    RES["isManager"] = False
+    RES["UserOff"] = True
     RES["isUserAv"] = False
     RES["user"] = None
     return redirect('/')
@@ -151,6 +153,7 @@ def deleteUser():
                 cur.execute("DELETE FROM users WHERE username = ?",(RES['user'],))
                 conn.commit()
                 RES["isUserAv"] = False
+                RES["UserOff"] = True
                 RES["user"] = None
                 return redirect('/')
             except Exception as e:
@@ -175,6 +178,7 @@ def deleteStore():
 @app.route('/setUdata', methods=['POST'])
 def loginUser():
     with sqlite3.connect('RealTime.db') as conn:
+        global RES
         cur = conn.cursor()
         result = request.form
         username = result.get('username')
@@ -182,8 +186,14 @@ def loginUser():
         t = (username,)
         user = cur.execute("SELECT * FROM USERS WHERE USERNAME=? " ,t).fetchone()
         if(user and password == user[2]):
-            global RES
             RES["isUserAv"] = True
+            RES["UserOff"] = False
+            RES["user"] = username
+            return redirect('/')
+        user = cur.execute("SELECT * FROM manager WHERE username = ? " ,t).fetchone()
+        if (user and password == user[1]):
+            RES["isManager"] = True
+            RES["UserOff"] = False
             RES["user"] = username
             return redirect('/')
         else:
@@ -195,10 +205,36 @@ def loginUser():
 
 
 
+#--------------- Manager Area ----------------------------
 
+#--------------- setting Manager ----------------------------
+@app.route('/Msetting')
+def m_setting():
+    return render_template('RealTimeManagerSetting.html')
 
+@app.route('/Au')
+def Au():
+    return render_template("RealTimeAddUser.html")
 
-
+@app.route('/addUser', methods=["POST"])
+def addUser():
+    result = request.form
+    if(result.get('password') == result.get('secPass')):
+        sql = ''' INSERT INTO users(username,firstname,password)
+                              VALUES(?,?,?) '''
+        RegUser = (result.get('username'), result.get('firstname'),
+                        result.get('password'))
+        with sqlite3.connect('RealTime.db') as conn:
+            cur = conn.cursor()
+            try:
+                cur.execute(sql, RegUser)
+                conn.commit()
+                return redirect('/')
+            except Exception as e:
+                print(e)
+                return render_template('RealTimeRegistration.html', UserNotOk = True)
+    else:
+        return render_template("RealTimeRegistration.html", notSaved = True)
 
 
 if __name__ == '__main__':
