@@ -23,8 +23,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RealTime.db" beforeDir="false" afterPath="$PROJECT_DIR$/RealTime.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RealTimeMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeMain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/master.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles/setting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/setting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RealTimeMain_Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeMain_Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserStory16and14.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserStoryTest.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/RealTimeMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RealTimeMain.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,9 +70,6 @@
       </set>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/UserStoryTest.py" root0="SKIP_INSPECTION" />
-  </component>
   <component name="JupyterTrust" id="8e3d59f9-3247-4fa6-be11-e7fd90698836" />
   <component name="ProjectId" id="1kyJ3rRbjDyHZviNtYmYfhsxvv9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -95,7 +93,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
@@ -107,7 +105,29 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.UserStory16">
+  <component name="RunManager" selected="Python.RealTimeMain_Test">
+    <configuration name="RealTimeMain_Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RealTime" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RealTimeMain_Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="UserStory16" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="RealTime" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,21 +209,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for UserStoryTest.test_UserStory16.test_check_account" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="RealTime" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;UserStoryTest.test_UserStory16.test_check_account&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in RealTimeMain_Test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="RealTime" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -236,11 +241,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.RealTimeMain_Test" />
         <item itemvalue="Python.UserStory16" />
-        <item itemvalue="Python tests.Unittests in RealTimeMain_Test.py" />
         <item itemvalue="Python tests.Unittests for RealTimeMain_Test.RealTimeMain_TEST" />
+        <item itemvalue="Python tests.Unittests in RealTimeMain_Test.py" />
         <item itemvalue="Python.UserStory16&amp;14" />
-        <item itemvalue="Python tests.Unittests for UserStoryTest.test_UserStory16.test_check_account" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +275,17 @@
       <workItem from="1609604189266" duration="40279000" />
       <workItem from="1609752049846" duration="8570000" />
       <workItem from="1609760729106" duration="23999000" />
-      <workItem from="1609788755493" duration="22200000" />
+      <workItem from="1609788755493" duration="22355000" />
+      <workItem from="1609862556370" duration="358000" />
+      <workItem from="1609863916496" duration="264000" />
+      <workItem from="1609926380022" duration="358000" />
+      <workItem from="1609930507931" duration="2669000" />
+      <workItem from="1609934333275" duration="3265000" />
+      <workItem from="1610006680762" duration="301000" />
+      <workItem from="1610015158273" duration="36000" />
+      <workItem from="1610019760758" duration="619000" />
+      <workItem from="1610108869485" duration="75000" />
+      <workItem from="1610119302742" duration="20074000" />
     </task>
     <servers />
   </component>
@@ -294,18 +309,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/RealTimeMain.py</url>
-          <line>249</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/RealTimeMain.py</url>
-          <line>220</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -315,9 +318,6 @@
       </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <configuration name="tests">
-        <watch expression="account" language="Python" />
-      </configuration>
       <configuration name="PythonConfigurationType">
         <watch expression="RES" language="Python" />
       </configuration>
@@ -326,13 +326,14 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RealTime$main.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1606668038947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$Unittests_in_UserStoryTest_py.coverage" NAME="Unittests in UserStoryTest.py Coverage Results" MODIFIED="1606673557547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GitHub$UserStory16.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1609856302734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GitHub$UserStory16.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1610138488487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$UserStory16__1_.coverage" NAME="UserStory16 (1) Coverage Results" MODIFIED="1606674708761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GitHub$Unittests_in_RealTimeMain_Test_py.coverage" NAME="Unittests in RealTimeMain_Test.py Coverage Results" MODIFIED="1609847273043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GitHub$Unittests_in_RealTimeMain_Test_py.coverage" NAME="Unittests in RealTimeMain_Test.py Coverage Results" MODIFIED="1610133820264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GitHub$UserStory16and14.coverage" NAME="UserStory16and14 Coverage Results" MODIFIED="1608135031017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GitHub$RealTimeMain_Test.coverage" NAME="RealTimeMain_Test Coverage Results" MODIFIED="1610139491202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GitHub$Unittests_for_UserStoryTest_test_UserStory16_test_check_account.coverage" NAME="Unittests for UserStoryTest.test_UserStory16.test_check_account Coverage Results" MODIFIED="1608059309845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GitHub$UserStory16_14.coverage" NAME="UserStory16&amp;14 Coverage Results" MODIFIED="1609760735742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$Unittests_for_UserStoryTest_test_UserStory16_test_check_account.coverage" NAME="Unittests for UserStoryTest.test_UserStory16.test_check_account Coverage Results" MODIFIED="1606674746152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GitHub$Unittests_for_RealTimeMain_Test_RealTimeMain_TEST.coverage" NAME="Unittests for RealTimeMain_Test.RealTimeMain_TEST Coverage Results" MODIFIED="1609845690162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GitHub$Unittests_for_RealTimeMain_Test_RealTimeMain_TEST.coverage" NAME="Unittests for RealTimeMain_Test.RealTimeMain_TEST Coverage Results" MODIFIED="1610136916239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -2,10 +2,6 @@ from flask import Flask, redirect, url_for, request, render_template
 import sqlite3
 
 
-
-
-
-
 app = Flask(__name__)
 RES = {"isUserAv": False, "user": None, "isManager": False , "UserOff":True}
 
@@ -44,7 +40,6 @@ def main():
         review = cur.execute("SELECT user ,comment FROM review").fetchall()
         for rev in review:
             RES["Review"].append(reivewToDic(rev))
-        print(RES['items'])
     return render_template('RealTimeMain.html', result=RES)
 
 @app.route('/signin')
@@ -60,46 +55,23 @@ def bussiness():
 @app.route('/regUser')
 def regUser():
     return render_template("RealTimeRegistration.html")
+
+
 @app.route('/register', methods=["POST"])
 def registerToDb():
     result = request.form
-    if(result.get('password') == result.get('secPass')):
-        sql = ''' INSERT INTO users(username,firstname,password)
-                              VALUES(?,?,?) '''
-        RegUser = (result.get('username'), result.get('firstname'),
-                        result.get('password'))
-        with sqlite3.connect('RealTime.db') as conn:
-            cur = conn.cursor()
-            try:
-                cur.execute(sql, RegUser)
-                conn.commit()
-                return redirect('/')
-            except Exception as e:
-                print(e)
-                return render_template('RealTimeRegistration.html', UserNotOk = True)
-    else:
-        return render_template("RealTimeRegistration.html", notSaved = True)
+    if(check_password(result.get('password'), result.get('secPass')) and registerToDb_help(result.get('username'), result.get('firstname'), result.get('password'))):
+        return redirect('/')
+    return render_template("RealTimeRegistration.html", notSaved = True)
 
-# --------------- Reg Bussiness ----------------------------
 @app.route('/regBus', methods=['POST'])
 def regBuis():
     result = request.form
-    sql = ''' INSERT INTO stores(company,numofpe,storelink,storePhoto,storeHoure,desc,username)
-                  VALUES(?,?,?,?,?,?,?) '''
-    storeData = (result.get('company'), int(result.get('numOfpeople')),
-                 result.get('link'), result.get('photo'),
-                 result.get('hours'), result.get('description'), RES["user"])
-    with sqlite3.connect('RealTime.db') as conn:
-        cur = conn.cursor()
-        try:
-            cur.execute(sql, storeData)
-            conn.commit()
-            return redirect('/')
-        except Exception as e:
-            print(e)
-            return render_template('RealTimeBussiness.html', saved=False, username=RES["user"])
+    if(regBuis_help(result.get('company'),result.get('numOfpeople'), result.get('link'), result.get('photo'), result.get('hours'), result.get('description'), result.get('user'))):
+        return redirect('/')
+    else:
+        return render_template('RealTimeBussiness.html', saved=False, username=RES["user"])
 
-#--------------- About Page ----------------------------
 
 @app.route('/about')
 def about():
@@ -126,52 +98,29 @@ def setting():
 @app.route('/cp')
 def cp():
     return render_template('RealTimeChangePassword.html')
+
+
 @app.route('/changePassword', methods=['POST'])
 def changePassword():
-    with sqlite3.connect('RealTime.db') as conn:
-        cur = conn.cursor()
-        result = request.form
-        username = RES['user']
-        password = result.get('newPass')
-        t = (username,)
-        user = cur.execute("SELECT * FROM USERS WHERE USERNAME=? ", t).fetchone()
-        if(result.get('oldPass') == newDic(user)['password']):
-            try:
-                cur.execute("UPDATE users SET password = ? WHERE username = ?", (password, username))
-                conn.commit()
-                return redirect('/')
-            except Exception as e:
-                print(e)
-                return render_template('RealTimeChangePassword.html')
-        return render_template('RealTimeChangePassword.html', passNotOK = True)
+    result = request.form
+    if(changePassword_help(result.get('oldPass'), result.get('newPass'))):
+        return redirect('/')
+    return render_template('RealTimeChangePassword.html', passNotOK = True)
 
 
-# --------------- Delete Users ----------------------------
 @app.route('/du')
 def du():
     print('page')
     return render_template('RealTimeDeleteUser.html')
 
+
 @app.route('/delete', methods=['POST'])
 def deleteUser():
-    with sqlite3.connect('RealTime.db') as conn:
-        global RES
-        cur = conn.cursor()
-        result = request.form
-        if(result.get('yesOrNo') == "YES"):
-            try:
-                deleteStore()
-                cur.execute("DELETE FROM users WHERE username = ?",(RES['user'],))
-                conn.commit()
-                RES["isUserAv"] = False
-                RES["UserOff"] = True
-                RES["user"] = None
-                return redirect('/')
-            except Exception as e:
-                print(e)
-                return render_template('RealTimeChangePassword.html')
+    result = request.form
+    if(deleteUser_help(RES['user'], result.get('yesOrNo'))):
+        return redirect('/')
+    return render_template('RealTimeChangePassword.html')
 
-    return redirect('/setting')
 
 def deleteStore():
     with sqlite3.connect('RealTime.db') as conn:
@@ -188,53 +137,22 @@ def deleteStore():
 
 @app.route('/setUdata', methods=['POST'])
 def loginUser():
-    with sqlite3.connect('RealTime.db') as conn:
-        global RES
-        cur = conn.cursor()
         result = request.form
         username = result.get('username')
         password = result.get('password')
-        t = (username,)
-        user = cur.execute("SELECT * FROM USERS WHERE USERNAME=? " ,t).fetchone()
-        if(user and password == user[2]):
-            RES["isUserAv"] = True
-            RES["UserOff"] = False
-            RES["user"] = username
-            return redirect('/')
-        user = cur.execute("SELECT * FROM manager WHERE username = ? " ,t).fetchone()
-        if (user and password == user[1]):
-            RES["isManager"] = True
-            RES["UserOff"] = False
-            RES["user"] = username
+        if(loginUserhelp(username,password)):
             return redirect('/')
         else:
             return render_template('RealTimeSignIn.html', userError=True)
 
-    # return render_template('RealTimeMain.html')
-
-
-#--------------- Review ----------------------------
 
 @app.route('/main' ,methods=['POST'])
 def review():
     result = request.form
-    sql = ''' INSERT INTO review(user,comment)
-                      VALUES(?,?) '''
-    storeData = (result.get('name'), result.get('comment'))
-    with sqlite3.connect('RealTime.db') as conn:
-        cur = conn.cursor()
-        try:
-            cur.execute(sql, storeData)
-            conn.commit()
-            return redirect('/')
-        except Exception as e:
-            print(e)
-            return render_template('RealTimeMain.html', UserNotOk=True)
+    if review_help(result.get('name'), result.get('comment')):
+        return redirect('/')
+    return render_template('RealTimeMain.html', UserNotOk=True)
 
-
-#--------------- Manager Area ----------------------------
-
-#--------------- setting Manager ----------------------------
 @app.route('/Msetting')
 def m_setting():
     return render_template('RealTimeManagerSetting.html')
@@ -246,23 +164,143 @@ def Au():
 @app.route('/addUser', methods=["POST"])
 def addUser():
     result = request.form
-    if(result.get('password') == result.get('secPass')):
+    if(check_password(result.get('password'), result.get('secPass')) and addUser_help(result.get('username'), result.get('firstname'), result.get('password'))):
+        return redirect('/')
+    return render_template('RealTimeRegistration.html', UserNotOk = True)
+
+# ------------ Function for Testing ---------------------
+
+#------reg--------
+def check_password(password, secpass):
+    return password == secpass
+
+def registerToDb_help(username, firstname, password):
         sql = ''' INSERT INTO users(username,firstname,password)
                               VALUES(?,?,?) '''
-        RegUser = (result.get('username'), result.get('firstname'),
-                        result.get('password'))
+        RegUser = (username, firstname,
+                        password)
         with sqlite3.connect('RealTime.db') as conn:
             cur = conn.cursor()
             try:
                 cur.execute(sql, RegUser)
                 conn.commit()
-                return redirect('/')
+                return True
             except Exception as e:
-                print(e)
-                return render_template('RealTimeRegistration.html', UserNotOk = True)
-    else:
-        return render_template("RealTimeRegistration.html", notSaved = True)
+                return False
+
+
+
+#-------login----------
+def loginUserhelp(username, password):
+    with sqlite3.connect('RealTime.db') as conn:
+        global RES
+        cur = conn.cursor()
+        t = (username,)
+        user = cur.execute("SELECT * FROM USERS WHERE USERNAME=? ", t).fetchone()
+        if (user and password == user[2]):
+            RES["isUserAv"] = True
+            RES["UserOff"] = False
+            RES["user"] = username
+            return True
+        user = cur.execute("SELECT * FROM manager WHERE username = ? ", t).fetchone()
+        if (user and password == user[1]):
+            RES["isManager"] = True
+            RES["UserOff"] = False
+            RES["user"] = username
+            return True
+        return False
+
+
+
+#-----------RegBussiness---------------
+def regBuis_help(company,numOfpeople, link, photo, hours, description, user):
+    sql = ''' INSERT INTO stores(company,numofpe,storelink,storePhoto,storeHoure,desc,username)
+                  VALUES(?,?,?,?,?,?,?) '''
+    storeData = (company, int(numOfpeople),
+                 link, photo,
+                 hours, description, RES["user"])
+    with sqlite3.connect('RealTime.db') as conn:
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, storeData)
+            conn.commit()
+            return True
+        except Exception as e:
+            return False
+
+#----------changePassword---------------
+def changePassword_help(oldPass, newPass):
+    with sqlite3.connect('RealTime.db') as conn:
+        cur = conn.cursor()
+        username = RES['user']
+        password = newPass
+        t = (username,)
+        user = cur.execute("SELECT * FROM USERS WHERE USERNAME=? ", t).fetchone()
+        if(oldPass == newDic(user)['password']):
+            try:
+                cur.execute("UPDATE users SET password = ? WHERE username = ?", (password, username))
+                conn.commit()
+                return True
+            except Exception as e:
+                return False
+        return False
+
+
+#-------------review---------------------
+def review_help(name, comment):
+    sql = ''' INSERT INTO review(user,comment)
+                      VALUES(?,?) '''
+    storeData = (name, comment)
+    with sqlite3.connect('RealTime.db') as conn:
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, storeData)
+            conn.commit()
+            return True
+        except Exception as e:
+            return False
+def deleteReview_help(name):
+    with sqlite3.connect('RealTime.db') as conn:
+        try:
+            cur = conn.cursor()
+            cur.execute("DELETE FROM review WHERE user = ?", (name,))
+            return True
+        except Exception as e:
+            return False
+
+#-----------addUser--------------------
+def addUser_help(username, firstname, password):
+    sql = ''' INSERT INTO users(username,firstname,password)
+                              VALUES(?,?,?) '''
+    RegUser = (username, firstname, password)
+    with sqlite3.connect('RealTime.db') as conn:
+        cur = conn.cursor()
+        try:
+            cur.execute(sql, RegUser)
+            conn.commit()
+            return True
+        except Exception as e:
+            return False
+
+
+#--------deleteUser--------------------
+def deleteUser_help(username,yesOrNo):
+    with sqlite3.connect('RealTime.db') as conn:
+        global RES
+        cur = conn.cursor()
+        if(yesOrNo== "YES"):
+            try:
+                deleteStore()
+                cur.execute("DELETE FROM users WHERE username = ?",(username,))
+                conn.commit()
+                RES["isUserAv"] = False
+                RES["UserOff"] = True
+                RES["user"] = None
+                return True
+            except Exception as e:
+                return False
+        return False
 
 
 if __name__ == '__main__':
-    app.run(port=3500, debug=True)
+    app.run(port=3800, debug=True)

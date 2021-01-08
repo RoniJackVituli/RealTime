@@ -79,7 +79,7 @@
                      <p><strong>שעות פתיחה:</strong></p>
                     <p class ="card-text">{{store.hour}}</p>
                     <p><strong>מספר האנשים בחנות:</strong></p>
-                    <p id = "dom"> </p>
+                    <p id = "{{'dom' + (loop.index | string)}}"> </p>
              </div>
         </div>
      {% endfor %}
@@ -87,9 +87,11 @@
      <br>
     <script>
         var numofitem = {{ result["items"]|length }};
-        console.log(numofitem)
-        document.getElementById("dom").innerHTML =
-        Math.floor((Math.random() * 35) +1);
+        for(var i=1;i<=numofitem;i++){
+            document.getElementById("dom"+i).innerHTML =
+            Math.floor((Math.random() * 35) +1);
+        }
+
     </script>
 
      <br><br>
