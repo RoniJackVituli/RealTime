@@ -22,11 +22,7 @@
     <list default="true" id="80c55e8d-9ba1-49fa-9f4a-5d9b2a84dae6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RealTime.db" beforeDir="false" afterPath="$PROJECT_DIR$/RealTime.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RealTimeMain.py" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeMain.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RealTimeMain_Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/RealTimeMain_Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserStory16and14.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserStoryTest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RealTimeMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RealTimeMain.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +101,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.RealTimeMain_Test">
+  <component name="RunManager" selected="Python tests.Unittests in RealTimeMain_Test.py">
     <configuration name="RealTimeMain_Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RealTime" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -241,10 +237,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in RealTimeMain_Test.py" />
         <item itemvalue="Python.RealTimeMain_Test" />
         <item itemvalue="Python.UserStory16" />
         <item itemvalue="Python tests.Unittests for RealTimeMain_Test.RealTimeMain_TEST" />
-        <item itemvalue="Python tests.Unittests in RealTimeMain_Test.py" />
         <item itemvalue="Python.UserStory16&amp;14" />
       </list>
     </recent_temporary>
@@ -285,7 +281,9 @@
       <workItem from="1610015158273" duration="36000" />
       <workItem from="1610019760758" duration="619000" />
       <workItem from="1610108869485" duration="75000" />
-      <workItem from="1610119302742" duration="20074000" />
+      <workItem from="1610119302742" duration="20595000" />
+      <workItem from="1610141645960" duration="1721000" />
+      <workItem from="1610185615783" duration="375000" />
     </task>
     <servers />
   </component>
@@ -309,6 +307,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/RealTimeMain.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/RealTimeMain_Test.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -326,11 +336,11 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/RealTime$main.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1606668038947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$Unittests_in_UserStoryTest_py.coverage" NAME="Unittests in UserStoryTest.py Coverage Results" MODIFIED="1606673557547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GitHub$UserStory16.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1610138488487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GitHub$UserStory16.coverage" NAME="UserStory16 Coverage Results" MODIFIED="1610141682510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$UserStory16__1_.coverage" NAME="UserStory16 (1) Coverage Results" MODIFIED="1606674708761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GitHub$Unittests_in_RealTimeMain_Test_py.coverage" NAME="Unittests in RealTimeMain_Test.py Coverage Results" MODIFIED="1610133820264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GitHub$Unittests_in_RealTimeMain_Test_py.coverage" NAME="Unittests in RealTimeMain_Test.py Coverage Results" MODIFIED="1610185984624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GitHub$UserStory16and14.coverage" NAME="UserStory16and14 Coverage Results" MODIFIED="1608135031017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/GitHub$RealTimeMain_Test.coverage" NAME="RealTimeMain_Test Coverage Results" MODIFIED="1610139491202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GitHub$RealTimeMain_Test.coverage" NAME="RealTimeMain_Test Coverage Results" MODIFIED="1610141983781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GitHub$Unittests_for_UserStoryTest_test_UserStory16_test_check_account.coverage" NAME="Unittests for UserStoryTest.test_UserStory16.test_check_account Coverage Results" MODIFIED="1608059309845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GitHub$UserStory16_14.coverage" NAME="UserStory16&amp;14 Coverage Results" MODIFIED="1609760735742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RealTime$Unittests_for_UserStoryTest_test_UserStory16_test_check_account.coverage" NAME="Unittests for UserStoryTest.test_UserStory16.test_check_account Coverage Results" MODIFIED="1606674746152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
