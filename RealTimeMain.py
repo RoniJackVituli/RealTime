@@ -5,7 +5,6 @@ app = Flask(__name__)
 RES = {"isUserAv": False, "user": None, "isManager": False , "UserOff":True}
 
 
-
 def newDic(tup):
     return {"username":tup[0],
             "firstnama":tup[1],
@@ -68,7 +67,10 @@ def registerToDb():
 @app.route('/regBus', methods=['POST'])
 def regBuis():
     result = request.form
-    if(regBuis_help(result.get('company'),result.get('numOfpeople'), result.get('link'), result.get('photo'), result.get('hours'), result.get('description'), result.get('user'))):
+    if(regBuis_help(result.get('company'),result.get('numOfpeople'), result.get('link'),
+                    result.get('photo'), result.get('hours'),
+                    result.get('description'),
+                    result.get('user'))):
         return redirect('/')
     else:
         return render_template('RealTimeBussiness.html', saved=False, username=RES["user"])
@@ -123,6 +125,7 @@ def deleteUser():
     return render_template('RealTimeChangePassword.html')
 
 
+
 def deleteStore():
     with sqlite3.connect('RealTime.db') as conn:
         global RES
@@ -145,7 +148,6 @@ def loginUser():
             return redirect('/')
         else:
             return render_template('RealTimeSignIn.html', userError=True)
-
 
 #Review
 @app.route('/main' ,methods=['POST'])
@@ -173,14 +175,6 @@ def addUser():
         return redirect('/')
     return render_template('RealTimeRegistration.html', UserNotOk = True)
 
-
-
-
-
-
-
-
-
 # ------------ Function for Testing ---------------------
 
 #------reg--------
@@ -200,6 +194,8 @@ def registerToDb_help(username, firstname, password):
                 return True
             except Exception as e:
                 return False
+
+
 
 
 
@@ -301,7 +297,7 @@ def deleteUser_help(username,yesOrNo):
     with sqlite3.connect('RealTime.db') as conn:
         global RES
         cur = conn.cursor()
-        if(yesOrNo== "YES"):
+        if(yesOrNo.lower() == "yes"):
             try:
                 deleteStore()
                 cur.execute("DELETE FROM users WHERE username = ?",(username,))
@@ -316,4 +312,4 @@ def deleteUser_help(username,yesOrNo):
 
 
 if __name__ == '__main__':
-    app.run(port=3800, debug=True)
+    app.run(port=3500, debug=True)

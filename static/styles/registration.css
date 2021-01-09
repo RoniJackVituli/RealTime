@@ -52,3 +52,11 @@ a {
   background-color: #f1f1f1;
   text-align: center;
 }
+
+#brandBar{
+    font-family: 'Audiowide';
+    font-size: 22px;
+    padding: 15px 0;
+    position: relative;
+    text-shadow: 0 1px 0 #000;
+}
