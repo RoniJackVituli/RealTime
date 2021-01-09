@@ -26,3 +26,7 @@ known bugs to be fixed:
  - Change password
  - Change profile
  - Multilingual: English and Hebrew
+ - Check stores opening hours
+ - Check stores costumers amount
+ - Check stores rating
+ - Read terms and conditions
