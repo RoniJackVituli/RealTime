@@ -40,10 +40,10 @@
 - go to your browser
 <br>
   <a href="https://ibb.co/Sts1ygy"><img src="https://i.ibb.co/6HnpwSw/2021-01-09-13-06-37.png" alt="2021-01-09-13-06-37" border="0"></a>
-
--paste the ip with the port in the url and press enter
+<br><br>
+- paste the ip with the port in the url and press enter
 <a href="https://ibb.co/4fv9nsg"><img src="https://i.ibb.co/59ptgYx/2021-01-09-13-10-48.png" alt="2021-01-09-13-10-48" border="0"></a>
-<br>
+<br><br>
 
 Welcome To RealTime Website:
 <br>
