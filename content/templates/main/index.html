@@ -1,0 +1,99 @@
+{% extends 'layouts/default/page.html' %}
+
+
+{% load i18n %}
+
+{% block content %}
+
+    {% if request.user.is_authenticated %}
+
+        {% trans 'Hello' %} <b>{{ request.user.username }}!</b>
+
+    {% else %}
+
+        {% trans 'Hello guest!' %}
+
+    {% endif %}
+
+
+<html>
+<head>
+    <title>REAL TIME</title>
+</head>
+<body>
+<!-- real time logo and description -->
+<center>
+    <img src="https://i.ibb.co/DLqLz5w/f32e6a71-3691-4310-b474-bd5668593847-200x200.png" alt="REAL TIME">
+
+    <h4><p style="font-family:'verdana'; padding-bottom: 150px">REALTIME is a website in which you can see how many people there are in a store, see store ratings, and more...</p></h4>
+
+<!-- Stores -->
+
+    <h3><p style="padding-bottom: 50px"> Stores: </p></h3>
+<figure>
+
+    <a href="https://shop.mango.com/il">
+    <img border="0" alt="MANGO" src="https://st.mngbcn.com/images/headerNew/logos/mango.svg" width="200" height="200">
+    </a>
+    <figcaption>Opening Hours: 09:00 - 22:00</figcaption>
+    <figcaption>People amount:24/50</figcaption>
+    <figcaption>Rating: 4/5</figcaption>
+
+</figure>
+
+
+
+<figure>
+
+    <a href="https://www.zara.com/">
+    <img border="0" alt="ZARA" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg" width="200" height="200">
+    </a>
+    <figcaption>Opening Hours: 09:00 - 22:00</figcaption>
+    <figcaption>People amount:3/45</figcaption>
+    <figcaption>Rating: 3/5</figcaption>
+</figure>
+
+
+
+<figure>
+
+    <a href="https://www.pullandbear.com/il/">
+    <img border="0" alt="PULL & BEAR" src="https://static.pullandbear.net/2/static2/itxwebstandard/logo/logo.png?t=202101030220011578333719" width=400" height="200">
+    </a>
+    <figcaption>Opening Hours: 09:00 - 22:00</figcaption>
+    <figcaption>People amount:38/50</figcaption>
+    <figcaption>Rating: 4.5/5</figcaption>
+</figure>
+
+
+
+<figure>
+    <a href="https://www.golf-il.co.il/">
+    <img border="0" alt="GOLF" src="https://www.golf-il.co.il/pub/media/idus/default/logo_2_.png" width="200" height="200">
+    </a>
+    <figcaption>Opening Hours: 09:00 - 22:00</figcaption>
+    <figcaption>People amount:7/40</figcaption>
+    <figcaption>Rating: 4/5</figcaption>
+</figure>
+
+
+
+<figure>
+    <a href="https://www.urbanica-wh.com/">
+    <img border="0" alt="URBANICA" src="https://www.urbanica-wh.com/pub/media/idus/default/logo-desktop_1.svg" width="200" height="200">
+    </a>
+    <figcaption>Opening Hours: 09:00 - 22:00</figcaption>
+    <figcaption>People amount:22/60</figcaption>
+    Rating: 3.5/5
+</figure>
+
+
+</center>
+</body>
+</html>
+
+
+
+{% endblock %}
+
+

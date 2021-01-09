@@ -1,0 +1,234 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2018-06-26 10:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Password"
+msgstr "סיסמא"
+
+msgid "Remember me"
+msgstr "זכור אותי"
+
+msgid "Username"
+msgstr "שם משתמש"
+
+msgid "You entered an invalid username."
+msgstr "שם המשתמש שגוי"
+
+msgid "You entered an invalid password."
+msgstr "סיסמא שגויה"
+
+msgid "This account is not active."
+msgstr "המשתמש אינו פעיל"
+
+msgid "Email"
+msgstr 'דוא"ל'
+
+msgid "You entered an invalid email address."
+msgstr "הדוא"ל אינו נכון"
+
+msgid "Email or Username"
+msgstr "שם משתמש או דוא"ל"
+
+msgid "You entered an invalid email address or username."
+msgstr "שם המשתמש או הדוא"ל שהוזן אינו נכון"
+
+msgid "Required. Enter an existing email address."
+msgstr "הכרחי. הכנס/י דוא"ל קיים"
+
+msgid "You can not use this email address."
+msgstr "אינך יכול/ה להשתמש בדוא"ל זה"
+
+msgid ""
+"Activation code has already been sent. You can request a new code in 24 "
+"hours."
+msgstr ""
+"קוד ההפעלה כבר נשלח. ניתן לבקש קוד חדש בעוד 24 שעות."
+
+msgid "Activation code not found."
+msgstr "לא נמצא קוד הפעלה."
+
+msgid "This account has already been activated."
+msgstr "משתמש זה כבר הופעל."
+
+msgid "First name"
+msgstr "שם פרטי"
+
+msgid "Last name"
+msgstr "שם משפחה"
+
+msgid "You can not use this mail."
+msgstr "אינך יכול/ה להשתמש בדוא"ל זה"
+
+msgid "Please enter another email."
+msgstr "בבקשה הכנס/י דוא"ל אחר"
+
+msgid "Change password"
+msgstr "שינוי סיסמא"
+
+msgid "Change"
+msgstr "שינוי"
+
+msgid "To activate your profile, please follow this link:"
+msgstr "להפעלת המשתמש, בבקשה עקוב אחר הלינק הבא:"
+
+msgid "To change your current email address, please follow the link:"
+msgstr ""
+"על מנת לשנות את הדוא"ל הקיים, אנא עקוב אחר הלינק הבא"
+
+msgid "Your username is:"
+msgstr "שם המשתמש שלך הוא:"
+
+msgid ""
+"You received this email because you requested a password reset for your user "
+"account."
+msgstr ""
+"קיבלת דוא"ל זה מכיוון שביקשת איפוס סיסמא למשתמש שלך"
+
+msgid "Please, go to the following page and choose a new password:"
+msgstr "בבקשה: היכנס ללינק הבא ובחר סיסמא חדשה:"
+
+msgid "Log in"
+msgstr "כניסה"
+
+msgid "Forgot your password?"
+msgstr "שחכת סיסמא?"
+
+msgid "Forgot your username?"
+msgstr "שכחת שם משתמש?"
+
+msgid "Resend an activation code"
+msgstr "שלח שנית קוד הפעלה"
+
+msgid "Logged out"
+msgstr "יציאה"
+
+msgid "Thanks for spending some quality time with the site today."
+msgstr "תודה שבילית זמן איכות באתר שלנו היום."
+
+msgid "Log in again"
+msgstr "כנס/י שוב"
+
+msgid "Change email"
+msgstr "שינוי דוא"ל"
+
+msgid "Change profile"
+msgstr "שינוי פרופיל"
+
+msgid "Remind a username"
+msgstr "הזכר לי את שם המשתמש"
+
+msgid "Next"
+msgstr "המשך"
+
+msgid "Restore password"
+msgstr "שחזור סיסמא"
+
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"בבקשה הכנס/י את סיסמתך החדשה פעמיים על מנת שנוכל לוודא שכתבת את זה "
+"נכון."
+
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+"לינק איפוס הסיסמא היה שגוי, כנראה עקב הפעלתו שנית. "
+"אנא בקש/י איפוס סיסמא חדש"
+
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered."
+msgstr ""
+"נשלח אליך דוא"ל עם הוראות שינוי הסיסמא, אם המשתמש "
+"קיים עם הדוא"ל שהזנת"
+
+msgid "You should receive them shortly."
+msgstr "הינך אמור/ה לקבל את זה בקרוב."
+
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you signed up with, and check your spam folder."
+msgstr ""
+"אם לא קיבלת דוא"ל, אנא וודא/י שהזנת את הדוא"ל"
+"שנרשמת איתו, ובדוק את תיקיית הספאם."
+
+msgid "Create an account"
+msgstr "צור משתמש"
+
+msgid "Create"
+msgstr "צור"
+
+msgid "Profile activation"
+msgstr "הפעלת פרופיל"
+
+msgid "Your username"
+msgstr "שם המשתמש שלך"
+
+msgid ""
+"You are signed up. To activate the account, follow the link sent to the mail."
+msgstr ""
+"הינך רשום/ה. להפעלת המשתמש, אנא עקוב אחר הלינק הנשלח אליך בדוא"ל "
+
+
+msgid "You are successfully signed up!"
+msgstr "נכנסת בהצלחה!"
+
+msgid "You have successfully activated your account!"
+msgstr "הפעלת המשתמש עברה בהצלחה!"
+
+msgid "A new activation code has been sent to your email address."
+msgstr "קוד הפעלה חדש נשלח אליך לדוא"ל"
+
+msgid "Profile data has been successfully updated."
+msgstr "נתוני הפרופיל עודכנו בהצלחה"
+
+msgid "To complete the change of email address, click on the link sent to it."
+msgstr ""
+"לסיום שינוי הדוא"ל, לחץ על הלינק הנשלח אליו. "
+
+msgid "Email successfully changed."
+msgstr "הדוא"ל שונה בהצלחה"
+
+msgid "You have successfully changed your email!"
+msgstr "שינית את הדוא"ל שלך בהצלחה!"
+
+msgid "Your username has been successfully sent to your email."
+msgstr ""
+"שם המשתמש שלך נשלח בהצלחה בדוא"ל"
+
+msgid "Your password was changed."
+msgstr "סיסמתך שונתה."
+
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr "סיסמתך נשמרה, הינך מוזמן/ת להיכנס עכשיו."
+
+msgid "English"
+msgstr "אנגלית"
+
+msgid "Hebrew"
+msgstr "עברית"
+
+
+msgid "Home"
+msgstr "דף בית"
+
+msgid "Log out"
+msgstr "יציאה"
+
+msgid "Change language"
+msgstr "שינוי סיסמא"
+
+msgid "Select the language"
+msgstr "בחר שפה"
+
+msgid "Hello"
+msgstr "שלום"
+
+msgid "You are a guest."
+msgstr "את/ה אורח/ת"
