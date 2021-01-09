@@ -1,9 +1,10 @@
 from flask import Flask, redirect, url_for, request, render_template
 import sqlite3
 
-
 app = Flask(__name__)
 RES = {"isUserAv": False, "user": None, "isManager": False , "UserOff":True}
+
+
 
 def newDic(tup):
     return {"username":tup[0],
@@ -134,7 +135,7 @@ def deleteStore():
             print(e)
     return
 
-
+#Login
 @app.route('/setUdata', methods=['POST'])
 def loginUser():
         result = request.form
@@ -146,6 +147,7 @@ def loginUser():
             return render_template('RealTimeSignIn.html', userError=True)
 
 
+#Review
 @app.route('/main' ,methods=['POST'])
 def review():
     result = request.form
@@ -153,10 +155,13 @@ def review():
         return redirect('/')
     return render_template('RealTimeMain.html', UserNotOk=True)
 
+#setting
 @app.route('/Msetting')
 def m_setting():
     return render_template('RealTimeManagerSetting.html')
 
+
+#add User
 @app.route('/Au')
 def Au():
     return render_template("RealTimeAddUser.html")
@@ -167,6 +172,14 @@ def addUser():
     if(check_password(result.get('password'), result.get('secPass')) and addUser_help(result.get('username'), result.get('firstname'), result.get('password'))):
         return redirect('/')
     return render_template('RealTimeRegistration.html', UserNotOk = True)
+
+
+
+
+
+
+
+
 
 # ------------ Function for Testing ---------------------
 
