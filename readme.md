@@ -1,6 +1,6 @@
 ## Welcome to REAL TIME!
 
-To access the the admin page:  
+To access the admin page:  
 User Name: admin  
 password: 123456  
 
